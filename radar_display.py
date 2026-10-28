@@ -19,8 +19,8 @@ import io
 # USER-DEFINED RADAR ORIGIN
 # Change HOME_LAT and HOME_LON to place the radar anywhere you want.
 # The radar center is NOT tied to Bengaluru.
-HOME_LAT = 19.0760
-HOME_LON = 72.8774
+HOME_LAT = 59.5372
+HOME_LON = 18.7215
 
 HOME_NAME = "RADAR ORIGIN"
 HOME_IATA = "HOME"

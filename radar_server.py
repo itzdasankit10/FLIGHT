@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify, render_template_string
 import math, time, threading, requests, csv, io
+import os
 
 app = Flask(__name__)
 
@@ -264,6 +265,8 @@ resize();
 setInterval(()=>{if(userLat!==null)loadRadar()},15000);
 </script></body></html>'''
 
-if __name__ == '__main__':
-    threading.Thread(target=airport_loop, daemon=True).start()
-    app.run(host='0.0.0.0', port=5000, debug=False, threaded=True)
+
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
